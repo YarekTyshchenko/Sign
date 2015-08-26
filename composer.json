@@ -1,7 +1,7 @@
 {
     "name": "yarekt/sign",
     "description": "TCP Client for MessageMaker series LED signs",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "authors": [
         {
             "name": "Yarek Tyshchenko",
@@ -13,8 +13,8 @@
         "phpunit/phpunit": "~4.8"
     },
     "autoload": {
-        "psr-0": {
-            "Sign\\": "src/"
+        "psr-4": {
+            "Sign\\": "src/Sign/"
         }
     }
 }
