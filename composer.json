@@ -1,0 +1,20 @@
+{
+    "name": "yarekt/sign",
+    "description": "TCP Client for MessageMaker series LED signs",
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Yarek Tyshchenko",
+            "email": "yarekt@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sign\\": "src/"
+        }
+    }
+}
