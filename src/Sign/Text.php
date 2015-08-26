@@ -1,8 +1,6 @@
 <?php
 namespace Sign;
 
-use Sign\ColourMap;
-
 class Text {
     private $_text;
     private $_colour;

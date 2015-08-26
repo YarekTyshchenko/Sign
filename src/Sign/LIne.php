@@ -1,9 +1,6 @@
 <?php
 namespace Sign;
 
-use Sign\Param;
-use Sign\ColourMap;
-
 class Line {
     private $_length = 21;
     private $_text;

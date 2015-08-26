@@ -1,8 +1,6 @@
 <?php
 namespace Sign;
 
-use Sign\Line;
-
 class Sign {
     private $_lines = array();
     private function _hex2bin($hexstr)
