@@ -10,15 +10,21 @@ class Line {
     private $_params = array();
 
     public function __construct($text, $parent) {
+        $this->setText($text);
+        $this->_parent = $parent;
+    }
+
+    public function setText($text) {
         // tokenise text
         preg_match_all('/\?+/', $text, $matches, PREG_OFFSET_CAPTURE);
+        $this->_params = array();
         foreach ($matches[0] as $key => $match) {
             $this->_params[$key] = array('param' => new Param(strlen($match[0])), 'offset' => $match[1]);
         }
 
         $this->_text = $text;
-        $this->_parent = $parent;
     }
+
     public function color($start, $end, $name) {
         return $this->colour($start, $end, $name);
     }
